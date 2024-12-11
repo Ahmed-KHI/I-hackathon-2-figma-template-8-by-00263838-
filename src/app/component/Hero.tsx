@@ -2,24 +2,27 @@ import Image from "next/image";
 import { BsFillCartDashFill } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa6";
 
-
-
 const HomePage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div className="space-y-8">
-          <p className="mt-1 text-gray-600 text-sm md:text-base lg:text-lg">
+      <section className="relative flex items-center justify-center px-4 lg:px-0 container mx-auto flex-col space-y-10">
+        <div className="flex flex-col lg:flex-row items-center p-8 bg-[#F0F2F3] rounded-bl-3xl border border-gray-100 w-full max-w-6xl ml-32 mr-32">
+          <div className="flex flex-col items-start gap-4 text-center lg:text-left p-12">
+          <p className="text-sm text-gray-500 tracking-wide">
             Welcome to Chairy
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900">
-            Best Furniture Collection For Your Interior.
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+            Best Furniture 
+            <br className="hidden md:block"/>
+            Collection For Your 
+            <br className="hidden md:block"/>
+            Interior.
           </h1>
 
-          <button className="bg-[#029FAE] w-[171px] text-white py-3 px-6 rounded-[8px] flex items-center gap-[20px] hover:bg-[#007580] mx-auto sm:mx-0">
-          <span>Shop Now</span>
-          <FaArrowRight />
+          <button className="bg-[#029FAE] w-[171px] text-[#FFFFFF] py-3 px-6 rounded-[8px] flex items-center gap-[20px] hover:bg-[#007580] mx-auto sm:mx-0">
+            <span>Shop Now</span>
+            <FaArrowRight />
           </button>
         </div>
         <div className="flex justify-center mt-8 lg:mt-0">
@@ -30,6 +33,7 @@ const HomePage = () => {
             height={584}
             className="rounded-lg"
           />
+          </div>
         </div>
       </section>
 
@@ -59,55 +63,64 @@ const HomePage = () => {
 
       {/* Featured Products Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Products</h2>
-        
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            {["product-1", "product-2", "product-3", "product-4"].map(
-              (product, i) => (
-                <div key={i} className="w-80">
-                  <div className="relative w-full h-[312px]">
-                   <Image
-                      src={`/${product}.png`}
-                      alt={product}
-                      width={312}
-                      height={312}
-                      className="object-cover w-[290px] h-[290px]"
-                    />
-                    {i === 1 && (
-                      <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                        Sale
-                      </span>
-                    )}
-                    {i === 0 && (
-                      <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
-                        New
-                      </span>
-                    )}
-                  </div>
-                  <div className="p-4">
-                    <div className="flex justify-between items-center">
-                      <h3 className="text-lg font-medium text-gray-800">
-                        Library Stool Chair
-                      </h3>
-                      <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
-                        <button>
-                          <BsFillCartDashFill className="mr-1" />
-                        </button>
-                      </div>
-                    </div>
-                    <p className="text-black font-bold mt-2">$20</p>
-                    
-                  </div>
+        <h2 className="text-3xl font-bold text-[#272343] mb-8">
+          Featured Products
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          {["product-1", "product-2", "product-3", "product-4"].map(
+            (product, i) => (
+              <div key={i} className="w-80">
+                <div className="relative w-full h-[312px]">
+                  <Image
+                    src={`/${product}.png`}
+                    alt={product}
+                    width={312}
+                    height={312}
+                    className="object-cover w-[290px] h-[290px]"
+                  />
+                  {i === 1 && (
+                    <span className="absolute top-2 left-2 bg-red-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
+                      Sale
+                    </span>
+                  )}
+                  {i === 0 && (
+                    <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
+                      New
+                    </span>
+                  )}
                 </div>
-              )
-            )}
-          </div>
-        
+                <div className="p-4">
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-lg font-medium text-[#272343]">
+                      Library Stool Chair
+                    </h3>
+                    <div className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
+                      <button>
+                        <BsFillCartDashFill className="mr-1" />
+                      </button>
+                    </div>
+                  </div>
+                  <p className="text-[#272343] font-bold mt-2">
+                    $20{" "}
+                    {i === 1 && (
+                      <span className="text-[#9A9CAA] line-through text-sm ml-2">
+                        $30
+                      </span>
+                    )}
+                  </p>
+                </div>
+              </div>
+            )
+          )}
+        </div>
       </section>
 
       {/* Top Categories Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Top Categories</h2>
+        <h2 className="text-3xl font-bold text-[#272343] mb-8">
+          Top Categories
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
@@ -126,7 +139,10 @@ const HomePage = () => {
               image: "image2",
             },
           ].map((category, index) => (
-            <div key={index} className="relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <div
+              key={index}
+              className="relative rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
               <Image
                 src={`/${category.image}.png`}
                 alt={category.name}
@@ -134,7 +150,7 @@ const HomePage = () => {
                 height={424}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-0 bg-black w-full h-[85px] bg-opacity-50 hover:bg-opacity-60 transition-opacity flex flex-col justify-end p-4 text-white">
+              <div className="absolute bottom-0 bg-[#000000] w-full h-[85px] bg-opacity-70 hover:bg-opacity-60 transition-opacity flex flex-col justify-end p-4 text-[#FFFFFF]">
                 <h3 className="text-lg font-semibold">{category.name}</h3>
                 <p className="text-sm">{category.count}</p>
               </div>
@@ -149,7 +165,7 @@ const HomePage = () => {
           {/* Left Section with Vertical Text and Image */}
           <div className="relative flex items-center justify-center">
             {/* Vertical Text */}
-            <p className="absolute transform -rotate-90 origin-bottom-left text-3xl sm:left-4 text-gray-900 font-semibold tracking-wide md:left-0 bottom-6">
+            <p className="absolute transform -rotate-90 origin-bottom-left text-3xl sm:left-4 text-[#272343] font-semibold tracking-wide md:left-0 bottom-6">
               Explore New and Popular Styles
             </p>
             {/* Main Image */}
@@ -166,7 +182,10 @@ const HomePage = () => {
           {/* Right Section with Small Chair Grid */}
           <div className="grid grid-cols-2 gap-4">
             {["01", "02", "20", "20"].map((chair, index) => (
-              <div key={index} className="relative hover:shadow-lg overflow-hidden">
+              <div
+                key={index}
+                className="relative hover:shadow-lg overflow-hidden"
+              >
                 <Image
                   src={`/${chair}.png`}
                   alt={`Chair ${index + 1}`}
@@ -182,12 +201,13 @@ const HomePage = () => {
 
       {/* Product Grid */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="text-3xl font-bold text-center text-[#272343] mb-8">
           Our Products
         </h2>
-     
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            {["product-1", "product-2", "product-3", "product-4"].map((product, i) => (
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          {["product-1", "product-2", "product-3", "product-4"].map(
+            (product, i) => (
               <div key={i} className="w-80">
                 <div className="relative w-full h-[312px]">
                   <Image
@@ -198,82 +218,84 @@ const HomePage = () => {
                     className="object-cover w-[290px] h-[290px]"
                   />
                   {i === 1 && (
-                    <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
+                    <span className="absolute top-2 left-2 bg-orange-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                       Sales
                     </span>
                   )}
                   {i === 0 && (
-                    <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                    <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                       New
                     </span>
                   )}
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-medium text-gray-800">Library Stool Chair</h3>
-                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
+                    <h3 className="text-lg font-medium text-[#272343]">
+                      Library Stool Chair
+                    </h3>
+                    <button className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                       <BsFillCartDashFill className="mr-1" />
                     </button>
                   </div>
-                  <p className="text-black font-bold mt-2">
+                  <p className="text-[#272343] font-bold mt-2">
                     $20{" "}
                     {i === 1 && (
-                      <span className="text-gray-500 line-through text-sm ml-2">
+                      <span className="text-[#9A9CAA] line-through text-sm ml-2">
                         $30
                       </span>
                     )}
                   </p>
                 </div>
               </div>
-            ))}
-          </div>
-        
+            )
+          )}
+        </div>
       </section>
-        {/* Product Grid */}
-        <section className="container mx-auto px-4 py-16">
-      
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            {["prodct1", "prodct2", "prodct3", "product-1"].map((product, i) => (
-              <div key={i} className="w-80">
-                <div className="relative w-full h-[312px]">
-                  <Image
-                    src={`/${product}.png`}
-                    alt={product}
-                    width={312}
-                    height={312}
-                    className="object-cover w-[290px] h-[290px]"
-                  />
-                  {i === 1 && (
-                    <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
-                      Sales
-                    </span>
-                  )}
-                  {i === 0 && (
-                    <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
-                      New
-                    </span>
-                  )}
-                </div>
-                <div className="p-4">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-medium text-gray-800">Library Stool Chair</h3>
-                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
-                      <BsFillCartDashFill className="mr-1" />
-                    </button>
-                  </div>
-                  <p className="text-black font-bold mt-2">
-                    $20{" "}
-                    {i === 1 && (
-                      <span className="text-gray-500 line-through text-sm ml-2">
-                        $30
-                      </span>
-                    )}
-                  </p>
-                </div>
+      {/* Product Grid */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          {["prodct1", "prodct2", "prodct3", "product-1"].map((product, i) => (
+            <div key={i} className="w-80">
+              <div className="relative w-full h-[312px]">
+                <Image
+                  src={`/${product}.png`}
+                  alt={product}
+                  width={312}
+                  height={312}
+                  className="object-cover w-[290px] h-[290px]"
+                />
+                {i === 1 && (
+                  <span className="absolute top-2 left-2 bg-orange-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
+                    Sales
+                  </span>
+                )}
+                {i === 0 && (
+                  <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
+                    New
+                  </span>
+                )}
               </div>
-            ))}
-          </div>
-        
+              <div className="p-4">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-medium text-[#272343]">
+                    Library Stool Chair
+                  </h3>
+                  <button className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
+                    <BsFillCartDashFill className="mr-1" />
+                  </button>
+                </div>
+                <p className="text-[#272343] font-bold mt-2">
+                  $20{" "}
+                  {i === 1 && (
+                    <span className="text-[#9A9CAA] line-through text-sm ml-2">
+                      $30
+                    </span>
+                  )}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

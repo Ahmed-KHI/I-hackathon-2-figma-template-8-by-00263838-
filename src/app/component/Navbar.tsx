@@ -17,9 +17,9 @@ const Navbar = () => {
     <header className="overflow-x-hidden ">
       {/* Top Line */}
       <div className="bg-[#272343] text-[#FFFFFF] text-sm">
-        <div className="container mx-auto flex items-center justify-between px-4 py-2">
+        <div className="container mx-auto flex items-center justify-between px-4 py-2 ml-20">
           <span>✓ Free Shipping On All Orders Over $50</span>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 mr-24">
             <div className="hover:underline flex items-center">
               Eng
               <RiArrowDropDownLine className="text-2xl" />
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center px-4 py-4">
           {/* Logo Centered */}
           <div className="flex-1 text-center">
-            <div className="flex space-x-2 justify-center sm:justify-start">
+            <div className="flex space-x-2 justify-center sm:justify-start ml-12">
               <Image src="/Logo Icon.png" alt="logo" width={40} height={40} />
               <span className="text-xl font-bold p-2 tracking-wide text-[#272343]">
                 Comforty
@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link href="/Cart">
-            <div className="flex items-center space-x-2 bg-white rounded-lg px-4 py-2">
+            <div className="flex items-center space-x-2 bg-white rounded-lg px-4 py-2 mr-12">
               {/* Cart Icon */}
               <CiShoppingCart className="h-6 w-6 text-[#272343]" />
               {/* Cart Text */}
@@ -78,7 +78,7 @@ const Navbar = () => {
       <nav className="bg-white border-t border-b-2 border-gray-300">
         <div className="container mx-auto w-full h-[74px] flex justify-between items-center px-4 py-4">
           {/* Menu Items */}
-          <ul className="flex space-x-8 w-full justify-center sm:justify-start font-semibold">
+          <ul className="flex space-x-8 w-full justify-center sm:justify-start font-semibold ml-12">
             <li>
               <Link
                 href="/"
@@ -121,7 +121,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="mr-4 hover:underline whitespace-nowrap text-[#636270]">
+          <div className="mr-12 hover:underline whitespace-nowrap text-[#636270]">
             <a href="/Contact" className="font-medium tracking-wide">
               Contact
             </a>

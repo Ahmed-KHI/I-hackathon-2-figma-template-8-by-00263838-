@@ -16,7 +16,7 @@ const Footer: FC = () => {
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo and About */}
         <div className="w-full sm:w-[350px]">
-          <h2 className="flex items-center space-x-2 text-xl font-semibold text-gray-800">
+          <h2 className="flex items-center space-x-2 text-xl font-semibold text-[#272343]">
             <Image
               src="/Logo Icon.png" // Replace with the actual path to your logo image
               alt="Comforty Logo"
@@ -27,7 +27,7 @@ const Footer: FC = () => {
             <span>Comforty</span>
           </h2>
 
-          <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+          <p className="mt-4 text-sm text-[#9A9CAA] leading-relaxed">
             Vivamus tristique odio sit amet velit semper,
             <br />
             eu posuere turpis interdum.
@@ -38,35 +38,35 @@ const Footer: FC = () => {
             {/* Social Media Icons */}
             <Link
               href="#"
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="text-[#636270] hover:text-blue-600 transition-colors"
               aria-label="Facebook"
             >
               <FaFacebookF size={20} />
             </Link>
             <Link
               href="#"
-              className="text-gray-500 hover:text-gray-900 transition-colors"
+              className="text-[#636270] hover:text-gray-900 transition-colors"
               aria-label="Twitter"
             >
               <FaTwitter size={20} />
             </Link>
             <Link
               href="#"
-              className="text-gray-500 hover:text-teal-500 transition-colors"
+              className="text-[#636270] hover:text-[#007580] transition-colors"
               aria-label="Instagram"
             >
               <FaInstagram size={20} />
             </Link>
             <Link
               href="#"
-              className="text-gray-500 hover:text-red-500 transition-colors"
+              className="text-[#636270] hover:text-red-500 transition-colors"
               aria-label="Pinterest"
             >
               <FaPinterest size={20} />
             </Link>
             <Link
               href="#"
-              className="text-gray-500 hover:text-red-600 transition-colors"
+              className="text-[#636270] hover:text-red-600 transition-colors"
               aria-label="YouTube"
             >
               <FaYoutube size={20} />
@@ -75,11 +75,11 @@ const Footer: FC = () => {
         </div>
 
         {/* Category Links */}
-        <div>
-          <h3 className="text-sm ml-12 font-semibold text-gray-500 uppercase tracking-wider">
+        <div className="ml-28">
+          <h3 className="text-md mb-4 font-semibold text-[#9A9CAA] uppercase tracking-wider">
             Category
           </h3>
-          <ul className="mt-4 space-y-2 ml-12">
+          <ul className="space-y-2">
             {[
               "Sofa",
               "Armchair",
@@ -91,7 +91,7 @@ const Footer: FC = () => {
               <li key={index}>
                 <Link
                   href="#"
-                  className="text-gray-600 hover:text-teal-500 hover:underline transition-colors text-sm"
+                  className="text-[#272343] hover:text-[#007580] hover:underline transition-colors text-sm"
                 >
                   {category}
                 </Link>
@@ -102,10 +102,10 @@ const Footer: FC = () => {
 
         {/* Support Links */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+          <h3 className="text-md font-semibold text-[#9A9CAA] uppercase tracking-wider mb-4">
             Support
           </h3>
-          <ul className="mt-4 space-y-2">
+          <ul className="space-y-2">
             {[
               "Help & Support",
               "Terms & Conditions",
@@ -115,7 +115,7 @@ const Footer: FC = () => {
               <li key={index}>
                 <Link
                   href="#"
-                  className="text-gray-600 hover:text-teal-500 hover:underline transition-colors text-sm"
+                  className="text-[#272343] hover:text-[#007580] hover:underline transition-colors text-sm"
                 >
                   {support}
                 </Link>
@@ -126,7 +126,7 @@ const Footer: FC = () => {
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+          <h3 className="text-md font-semibold text-[#9A9CAA] uppercase tracking-wider mb-4">
             Newsletter
           </h3>
           <form className="mt-4">
@@ -134,16 +134,16 @@ const Footer: FC = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full sm:w-auto mr-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
+                className="w-full sm:w-auto mr-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#007580] text-sm"
               />
               <button
                 type="submit"
-                className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-r-lg text-sm font-medium mt-4 sm:mt-0 sm:ml-2"
+                className="bg-teal-500 hover:bg-[#007580] text-white px-4 py-2 rounded-r-lg text-sm font-medium mt-4 sm:mt-0 sm:ml-2"
               >
                 Subscribe
               </button>
             </div>
-            <p className="text-xs text-gray-600 mt-2">
+            <p className="text-xs text-[#9A9CAA] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               tincidunt erat enim.
             </p>
@@ -153,12 +153,12 @@ const Footer: FC = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-200 mt-12 py-4">
-        <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-[#9A9CAA]">
           <p>
           Copyright 2024. Designed & Developed by{" "}
             <Link
               href="#"
-              className="text-teal-500 hover:text-teal-600 transition-colors"
+              className="text-[#007580] hover:text-teal-800 transition-colors hover:font-semibold"
             >
               (00263838)
             </Link>
