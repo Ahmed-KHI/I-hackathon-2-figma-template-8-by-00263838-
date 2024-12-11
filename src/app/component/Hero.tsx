@@ -17,7 +17,7 @@ const HomePage = () => {
             Best Furniture Collection For Your Interior.
           </h1>
 
-          <button className="bg-teal-500 w-[171px] text-white py-3 px-6 rounded-[8px] flex items-center gap-[20px] hover:bg-teal-600 mx-auto sm:mx-0">
+          <button className="bg-[#029FAE] w-[171px] text-white py-3 px-6 rounded-[8px] flex items-center gap-[20px] hover:bg-[#007580] mx-auto sm:mx-0">
           <span>Shop Now</span>
           <FaArrowRight />
           </button>
@@ -89,7 +89,7 @@ const HomePage = () => {
                       <h3 className="text-lg font-medium text-gray-800">
                         Library Stool Chair
                       </h3>
-                      <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                      <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                         <button>
                           <BsFillCartDashFill className="mr-1" />
                         </button>
@@ -211,7 +211,7 @@ const HomePage = () => {
                 <div className="p-4">
                   <div className="flex justify-between items-center">
                     <h3 className="text-lg font-medium text-gray-800">Library Stool Chair</h3>
-                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                       <BsFillCartDashFill className="mr-1" />
                     </button>
                   </div>
@@ -257,7 +257,7 @@ const HomePage = () => {
                 <div className="p-4">
                   <div className="flex justify-between items-center">
                     <h3 className="text-lg font-medium text-gray-800">Library Stool Chair</h3>
-                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                    <button className="w-14 px-4 py-2 bg-gray-300 text-white rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                       <BsFillCartDashFill className="mr-1" />
                     </button>
                   </div>
