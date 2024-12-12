@@ -7,7 +7,7 @@ const page = () => {
     <div>
       {/* Featured Products Section 1 */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 ml-12">
+        <h2 className="text-3xl font-bold text-[#272343] mb-8 ml-12">
           All Product
         </h2>
 
@@ -24,22 +24,22 @@ const page = () => {
                     className="object-cover w-[290px] h-[290px]"
                   />
                   {i === 1 && (
-                    <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
+                    <span className="absolute top-2 left-2 bg-orange-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                       Sale
                     </span>
                   )}
                   {i === 0 && (
-                    <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                    <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                       New
                     </span>
                   )}
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-sm">
                   <div className="flex justify-between items-center">
                     <h3 className="text-lg font-medium text-gray-800">
                       Library Stool Chair
                     </h3>
-                    <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                    <div className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                       <button>
                         <BsFillCartDashFill className="mr-1" />{" "}
                         {/* Cart Icon with margin */}
@@ -47,10 +47,10 @@ const page = () => {
                     </div>
                   </div>
 
-                  <p className="text-black font-bold mt-2">
+                  <p className="text-[#272343] font-bold mt-2">
                     $20{" "}
                     {i === 1 && (
-                      <span className="text-gray-500 line-through text-sm ml-2">
+                      <span className="text-[#9A9CAA] line-through text-sm ml-2">
                         $30
                       </span>
                     )}
@@ -75,22 +75,22 @@ const page = () => {
                   className="object-cover w-[290px] h-[290px]"
                 />
                 {i === 1 && (
-                  <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
+                  <span className="absolute top-2 left-2 bg-orange-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                     Sale
                   </span>
                 )}
                 {i === 0 && (
-                  <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                  <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                     New
                   </span>
                 )}
               </div>
               <div className="p-4">
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-medium text-gray-800">
+                  <h3 className="text-lg font-medium text-[#272343]">
                     Library Stool Chair
                   </h3>
-                  <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                  <div className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                     <button>
                       <BsFillCartDashFill className="mr-1" />{" "}
                       {/* Cart Icon with margin */}
@@ -98,10 +98,10 @@ const page = () => {
                   </div>
                 </div>
 
-                <p className="text-black font-bold mt-2">
+                <p className="text-[#272343] font-bold mt-2">
                   $20{" "}
                   {i === 1 && (
-                    <span className="text-gray-500 line-through text-sm ml-2">
+                    <span className="text-[#9A9CAA] line-through text-sm ml-2">
                       $30
                     </span>
                   )}
@@ -125,22 +125,22 @@ const page = () => {
                   className="object-cover w-[290px] h-[290px]"
                 />
                 {i === 1 && (
-                  <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
+                  <span className="absolute top-2 left-2 bg-orange-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                     Sale
                   </span>
                 )}
                 {i === 0 && (
-                  <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                  <span className="absolute top-2 left-2 bg-green-500 text-[#FFFFFF] text-xs font-bold px-2 py-1 rounded">
                     New
                   </span>
                 )}
               </div>
               <div className="p-4">
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-medium text-gray-800">
+                  <h3 className="text-lg font-medium text-[#272343]">
                     Library Stool Chair
                   </h3>
-                  <div className="w-13 mr-5 px-2 py-2 bg-gray-300 text-white rounded-lg hover:bg-teal-600 flex items-center justify-center">
+                  <div className="w-13 mr-5 px-2 py-2 bg-[#F0F2F3] text-[#FFFFFF] rounded-lg hover:bg-[#029FAE] flex items-center justify-center">
                     <button>
                       <BsFillCartDashFill className="mr-1" />{" "}
                       {/* Cart Icon with margin */}
@@ -148,10 +148,10 @@ const page = () => {
                   </div>
                 </div>
 
-                <p className="text-black font-bold mt-2">
+                <p className="text-[#272343] font-bold mt-2">
                   $20{" "}
                   {i === 1 && (
-                    <span className="text-gray-500 line-through text-sm ml-2">
+                    <span className="text-[#9A9CAA] line-through text-sm ml-2">
                       $30
                     </span>
                   )}
@@ -161,9 +161,9 @@ const page = () => {
           ))}
         </div>
       </section>
-      <div className="bg-gray-100 py-16 px-4 text-center">
+      <div className="bg-[#f0f1f5] py-16 px-4 text-center">
         {/* Newsletter Section */}
-        <h2 className="text-3xl font-semibold text-black mb-6">
+        <h2 className="text-3xl font-semibold text-[#000000] mb-6">
           Or Subscribe To The Newsletter
         </h2>
         <form className="flex justify-center items-center gap-4 max-w-lg mx-auto">
@@ -188,7 +188,7 @@ const page = () => {
         </form>
 
         {/* Instagram Section */}
-        <h3 className="text-3xl font-semibold text-black mt-16 mb-6">
+        <h3 className="text-3xl font-semibold text-[#000000] mt-16 mb-6">
           Follow Products And Discounts On Instagram
         </h3>
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center items-center max-w-6xl mx-auto">

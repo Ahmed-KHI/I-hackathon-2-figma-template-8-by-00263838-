@@ -8,7 +8,7 @@ const AboutSection = () => {
       {/* About Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-10 px-6 md:px-10 mr-2">
         {/* Text Content */}
-        <div className="bg-teal-800 text-white flex flex-col justify-center p-8 rounded-lg">
+        <div className="bg-[#007580] text-[#FFFFFF] flex flex-col justify-center p-8 rounded-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             About Us - Comforty
           </h2>
@@ -18,7 +18,7 @@ const AboutSection = () => {
             premium materials, and modern aesthetics, we craft chairs that
             seamlessly blend style with functionality.
           </p>
-          <button className="mt-14 w-[190px] h-[56px] bg-teal-600 text-white px-10 py-2 rounded-lg font-medium hover:bg-teal-950">
+          <button className="mt-14 w-[190px] h-[56px] bg-[#029FAE] text-[#FFFFFF] px-10 py-2 rounded-sm font-medium hover:bg-[#165b61]">
             View Collection
           </button>
         </div>
@@ -46,51 +46,51 @@ const AboutSection = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Feature 1 */}
-            <div className="text-center p-6 bg-gray-100 rounded-lg shadow">
-              <div className="mb-4 text-teal-700">
+            <div className="text-center p-6 bg-gray-100 rounded-sm">
+              <div className="mb-4 text-[#007580]">
                 <FaShippingFast className="h-8 w-8 mx-auto" />
               </div>
-              <h4 className="text-lg text-teal-700 font-medium mb-2">
+              <h4 className="text-lg text-[#007580] font-medium mb-2">
                 Next Day as Standard
               </h4>
-              <p className="text-teal-700 text-sm">
+              <p className="text-[#007580] text-sm">
                 Order before 3pm and get your order the next day as standard.
               </p>
             </div>
             {/* Feature 2 */}
-            <div className="text-center p-6 bg-gray-100 rounded-lg shadow">
-              <div className="mb-4 text-teal-700">
+            <div className="text-center p-6 bg-gray-100 rounded-sm">
+              <div className="mb-4 text-[#007580]">
                 <FaHands className="h-8 w-8 mx-auto" />
               </div>
-              <h4 className="text-lg text-teal-700 font-medium mb-2">
+              <h4 className="text-lg text-[#007580] font-medium mb-2">
                 Made by True Artisans
               </h4>
-              <p className="text-teal-700 text-sm">
+              <p className="text-[#007580] text-sm">
                 Handmade crafted goods made with real passion and craftsmanship.
               </p>
             </div>
             {/* Feature 3 */}
-            <div className="text-center p-6 bg-gray-100 rounded-lg shadow">
-              <div className="mb-4 text-teal-700">
+            <div className="text-center p-6 bg-gray-100 rounded-sm">
+              <div className="mb-4 text-[#007580]">
                 <FaTags className="h-8 w-8 mx-auto" />
               </div>
-              <h4 className="text-lg text-teal-700 font-medium mb-2">
+              <h4 className="text-lg text-[#007580] font-medium mb-2">
                 Unbeatable Prices
               </h4>
-              <p className="text-teal-700 text-sm">
+              <p className="text-[#007580] text-sm">
                 For our materials and quality, you won’t find better prices
                 anywhere.
               </p>
             </div>
             {/* Feature 4 */}
-            <div className="text-center p-6 bg-gray-100 rounded-lg shadow">
-              <div className="mb-4 text-teal-700">
+            <div className="text-center p-6 bg-gray-100 rounded-sm">
+              <div className="mb-4 text-[#007580]">
                 <FaRecycle className="h-8 w-8 mx-auto" />
               </div>
-              <h4 className="text-lg text-teal-700 font-medium mb-2">
+              <h4 className="text-lg text-[#007580] font-medium mb-2">
                 Recycled Packaging
               </h4>
-              <p className="text-teal-700 text-sm">
+              <p className="text-[#007580] text-sm">
                 We use 100% recycled materials to ensure our footprint is more
                 manageable.
               </p>
@@ -102,7 +102,7 @@ const AboutSection = () => {
       {/* Popular Products Section */}
       <div className="bg-white py-10 px-6">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-[#272343]">
             Our Popular Products
           </h3>
           <div className="flex flex-wrap justify-between items-start gap-6">
@@ -118,9 +118,9 @@ const AboutSection = () => {
                   priority
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 text-[#2A254B]">
                 <h4 className="font-medium text-lg">The Poplar suede sofa</h4>
-                <p className="text-gray-600">$99.00</p>
+                <p className="">$99.00</p>
               </div>
             </div>
             {/* Product 2 */}
@@ -135,9 +135,9 @@ const AboutSection = () => {
                   priority
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 text-[#2A254B]">
                 <h4 className="font-medium text-lg">The Dandy chair</h4>
-                <p className="text-gray-600">$99.00</p>
+                <p className="">$99.00</p>
               </div>
             </div>
             {/* Product 3 */}
@@ -152,9 +152,9 @@ const AboutSection = () => {
                   priority
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 text-[#2A254B]">
                 <h4 className="font-medium text-lg">The Dandy chair</h4>
-                <p className="text-gray-600">$99.00</p>
+                <p className="">$99.00</p>
               </div>
             </div>
           </div>
