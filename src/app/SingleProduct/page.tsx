@@ -16,8 +16,10 @@ const page: React.FC = () => {
           className="w-full h-[] max-w-md rounded-lg shadow-lg object-cover"
         />
         <div className="text-left">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Library Stool Chair
+          <h2 className="text-3xl font-bold text-[#272343] mb-4">
+            Library Stool 
+            <br />
+            Chair
           </h2>
 
           <p className="px-6 py-3 w-[144] h-[44] font-semibold justify-center bg-teal-500 text-white rounded-full mb-4 ">

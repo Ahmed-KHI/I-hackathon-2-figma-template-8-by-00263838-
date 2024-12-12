@@ -7,9 +7,11 @@ const page = () => {
     <div>
       {/* Featured Products Section 1 */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">All Product</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8 ml-12">
+          All Product
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 ml-12 mr-12">
           {["product-1", "product-2", "product-3", "product-4"].map(
             (product, i) => (
               <div key={i} className=" overflow-hidden w-80">
@@ -61,7 +63,7 @@ const page = () => {
       </section>
       {/* Featured Products Section 2 */}
       <section className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 ml-12 mr-12">
           {["Image", "prodct2", "prodct3", "product-1"].map((product, i) => (
             <div key={i} className=" overflow-hidden w-80">
               <div className="relative w-full h-[312px]">
@@ -111,7 +113,7 @@ const page = () => {
       </section>
       {/* Featured Products Section 3 */}
       <section className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 ml-12 mr-12">
           {["prodct1", "product-2", "product-3", "image2"].map((product, i) => (
             <div key={i} className=" overflow-hidden w-80">
               <div className="relative w-full h-[312px]">
@@ -189,7 +191,7 @@ const page = () => {
         <h3 className="text-3xl font-semibold text-black mt-16 mb-6">
           Follow Products And Discounts On Instagram
         </h3>
-        <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center items-center max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center items-center max-w-6xl mx-auto">
           {[
             "/Image.png",
             "/prodct1.png",

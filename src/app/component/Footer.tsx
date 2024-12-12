@@ -7,12 +7,11 @@ import {
   FaInstagram,
   FaPinterest,
   FaYoutube,
-  
 } from "react-icons/fa";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white border-t border-gray-200 ml-14 mr-16">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Logo and About */}
         <div className="w-full sm:w-[350px]">
@@ -152,10 +151,10 @@ const Footer: FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 mt-12 py-4">
+      <div className="border-t border-gray-200 mt-12 py-4 ml-4 ">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-[#9A9CAA]">
           <p>
-          Copyright 2024. Designed & Developed by{" "}
+            Copyright 2024. Designed & Developed by{" "}
             <Link
               href="#"
               className="text-[#007580] hover:text-teal-800 transition-colors hover:font-semibold"

@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <div className="bg-gray-50">
       {/* About Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-10 px-6 md:px-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-10 px-6 md:px-10 mr-2">
         {/* Text Content */}
         <div className="bg-teal-800 text-white flex flex-col justify-center p-8 rounded-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
