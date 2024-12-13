@@ -46,7 +46,7 @@ const AboutSection = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Feature 1 */}
-            <div className="text-center p-6 bg-gray-100 rounded-sm">
+            <div className="text-center p-6 bg-[#F9F9F9] rounded-sm">
               <div className="mb-4 text-[#007580]">
                 <FaShippingFast className="h-8 w-8 mx-auto" />
               </div>
@@ -58,7 +58,7 @@ const AboutSection = () => {
               </p>
             </div>
             {/* Feature 2 */}
-            <div className="text-center p-6 bg-gray-100 rounded-sm">
+            <div className="text-center p-6 bg-[#F9F9F9] rounded-sm">
               <div className="mb-4 text-[#007580]">
                 <FaHands className="h-8 w-8 mx-auto" />
               </div>
@@ -70,7 +70,7 @@ const AboutSection = () => {
               </p>
             </div>
             {/* Feature 3 */}
-            <div className="text-center p-6 bg-gray-100 rounded-sm">
+            <div className="text-center p-6 bg-[#F9F9F9] rounded-sm">
               <div className="mb-4 text-[#007580]">
                 <FaTags className="h-8 w-8 mx-auto" />
               </div>
@@ -83,7 +83,7 @@ const AboutSection = () => {
               </p>
             </div>
             {/* Feature 4 */}
-            <div className="text-center p-6 bg-gray-100 rounded-sm">
+            <div className="text-center p-6 bg-[#F9F9F9] rounded-sm">
               <div className="mb-4 text-[#007580]">
                 <FaRecycle className="h-8 w-8 mx-auto" />
               </div>
