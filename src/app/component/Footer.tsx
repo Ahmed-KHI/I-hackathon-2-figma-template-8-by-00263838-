@@ -17,10 +17,10 @@ const Footer: FC = () => {
         <div className="w-full sm:w-[350px]">
           <h2 className="flex items-center space-x-2 text-xl font-semibold text-[#272343]">
             <Image
-              src="/Logo Icon.png" // Replace with the actual path to your logo image
+              src="/Logo Icon.png" 
               alt="Comforty Logo"
-              width={40} // Adjust size based on your design
-              height={40} // Adjust size based on your design
+              width={40} 
+              height={40} 
               className="object-contain"
             />
             <span>Comforty</span>

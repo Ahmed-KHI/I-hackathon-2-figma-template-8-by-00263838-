@@ -5,69 +5,108 @@ import Image from "next/image";
 
 const page: React.FC = () => {
   return (
-    <div className="bg-white py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Bag Section */}
+    <div className="max-w-[1321px] mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8 mr-8 ml-8">
         <div className="lg:col-span-2">
-          <h2 className="text-2xl font-semibold text-[#111111] mb-6">Bag</h2>
-          {["prodct1", "product-3"].map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 border-b pb-4"
-            >
-              {/* Left Section: Image and Product Info */}
-              <div className="flex items-start gap-4">
+          <h2 className="text-[22px] font-medium pl-3 mb-6 text-[#111111]">
+            Bag
+          </h2>
+
+          {/* First Product Card */}
+          <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md mb-4">
+            <div className="flex items-center space-x-4">
+              <div className="w-24 h-24 bg-orange-200 rounded">
                 <Image
-                  src={`/images/${item}.Png`} // Adjust path if necessary
+                  src="/images/product-3.png"
                   alt="Library Stool Chair"
-                  width={150} // Specify width
-                  height={150} // Specify height
-                  className="rounded-md object-cover"
+                  width={150}
+                  height={150}
                 />
-                <div>
-                  <p className="text-[#272343] font-medium">
-                    Library Stool Chair
+              </div>
+              <div>
+                <h3 className="text-[16px] font-normal text-[#272343] mb-3">
+                  Library Stool Chair
+                </h3>
+                <p className="text-sm text-[#757575] mb-1">
+                  Ashen Slate/Cobalt Bliss
+                </p>
+                <div className="flex space-x-8 sm:space-x-4">
+                  <p className="text-[15px] font-normal text-[#757575]">
+                    Size: L
                   </p>
-                  <p className="text-[#757575] mt-8 text-sm">
-                    Ashen Slate/Cobalt Bliss
+                  <p className="text-[15px] font-normal text-[#757575]">
+                    Quantity: 1
                   </p>
-                  <p className="text-[#757575] mt-2 text-sm">
-                    Size: <u>L</u> Quantity: <u>1</u>
-                  </p>
-                  <div className="flex items-center mt-3 gap-4 text-[#111111]">
-                    <AiOutlineHeart className="w-5 h-5 cursor-pointer hover:text-red-800" />
-                    <AiOutlineDelete className="w-5 h-5 cursor-pointer hover:text-gray-600" />
-                  </div>
+                </div>
+                <div className="flex gap-3 mt-3 text-[#111111]">
+                  <AiOutlineHeart />
+                  <AiOutlineDelete />
                 </div>
               </div>
+            </div>
+            <div className="flex gap-3">
+              <p className="text-[16px] font-normal text-[#111111]">MRP:</p>
+              <p className="text-[16px] font-normal text-[#111111]">$99</p>
+            </div>
+          </div>
 
-              {/* Right Section: Price and Actions */}
-              <div className="mt-4 sm:mt-0 flex items-center gap-6 w-full sm:w-auto justify-between sm:justify-end">
-                <p className="text-[#111111] font-medium">MRP: $99</p>
+          {/* Second Product Card */}
+          <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md mb-4">
+            <div className="flex items-center space-x-4">
+              <div className="w-24 h-24 bg-gray-300 rounded">
+                <Image
+                  src="/images/prodct1.png"
+                  alt="Library Stool Chair"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div>
+                <h3 className="text-[16px] font-normal text-[#272343] mb-3">
+                  Library Stool Chair
+                </h3>
+                <p className="text-sm text-[#757575] mb-3">
+                  Ashen Slate/Cobalt Bliss
+                </p>
+                <div className="flex space-x-8 sm:space-x-4">
+                  <p className="text-[15px] font-normal text-[#757575]">
+                    Size: L
+                  </p>
+                  <p className="text-[15px] font-normal text-[#757575]">
+                    Quantity: 1
+                  </p>
+                </div>
+                <div className="flex gap-3 mt-3 text-[#111111]">
+                  <AiOutlineHeart />
+                  <AiOutlineDelete />
+                </div>
               </div>
             </div>
-          ))}
+            <div className="flex gap-3">
+              <p className="text-[16px] font-normal text-[#111111]">MRP:</p>
+              <p className="text-[16px] font-normal text-[#111111]">$99</p>
+            </div>
+          </div>
         </div>
 
         {/* Summary Section */}
         <div>
-          <h2 className="text-2xl mt-4 font-semibold text-[#111111] mb-6">
-            Summary
-          </h2>
-          <div className="">
-            <div className="flex justify-between mb-4">
-              <p className="text-[#111111]">Subtotal</p>
-              <p className="text-[#111111]">$198.00</p>
+          <h2 className="text-2xl font-bold mb-6 text-[#111111]">Summary</h2>
+          <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-md">
+            <div className="flex justify-between mb-4 text-[#111111]">
+              <p className="text-lg">Subtotal</p>
+              <p className="text-lg font-semibold">$198.00</p>
             </div>
-            <div className="flex justify-between mb-4">
-              <p className="text-[#111111]">Estimated Delivery & Handling</p>
-              <p className="text-[#111111]">Free</p>
+            <div className="flex justify-between mb-4 text-[#111111]">
+              <p className="text-lg">Estimated Delivery & Handling</p>
+              <p className="text-lg font-semibold">Free</p>
             </div>
-            <div className="flex justify-between border-t border-b-2 border-gray-200 pt-4">
-              <p className="text-[#111111] font-medium">Total</p>
-              <p className="text-[#111111] font-medium">$198.00</p>
+            <hr className="mb-4" />
+            <div className="flex justify-between mb-6 text-[#111111]">
+              <p className="text-xl font-bold">Total</p>
+              <p className="text-xl font-bold">$198.00</p>
             </div>
-            <button className="mt-6 w-full bg-[#029FAE] text-[#FFFFFF] py-3 rounded-full text-lg font-medium hover:bg-[#20929c] transition">
+            <button className="w-full sm:w-[334.67px] h-[60px] rounded-[30px] text-[#FFFFFF] bg-[#029FAE]">
               Member Checkout
             </button>
           </div>
