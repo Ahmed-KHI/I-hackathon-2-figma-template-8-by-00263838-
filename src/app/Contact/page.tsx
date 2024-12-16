@@ -77,7 +77,7 @@ const Contact = () => {
                   id="name"
                   name="name"
                   placeholder="Your Name"
-                  className="w-[350] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
+                  className="w-[350px] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
                   required
                 />
               </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                   id="email"
                   name="email"
                   placeholder="Abc@def.com"
-                  className="w-[350] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
+                  className="w-[350px] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
                   required
                 />
               </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                   id="subject"
                   name="subject"
                   placeholder="This is an optional"
-                  className="w-[350] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
+                  className="w-[350px] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
                 />
               </div>
               <div className="mb-4">
@@ -124,13 +124,13 @@ const Contact = () => {
                   name="message"
                   placeholder="Hi! I’d like to ask about..."
                   rows={4}
-                  className="w-[350] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
+                  className="w-[350px] mt-1 px-4 py-2 border border-[#9F9F9F] rounded-md focus:ring focus:ring-[#029FAE] focus:border-[#029FAE]"
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-[200] bg-[#029FAE] text-white py-2 px-4 rounded-sm hover:bg-[#288d96] transition"
+                className="w-[200px] bg-[#029FAE] text-white py-2 px-4 rounded-sm hover:bg-[#288d96] transition"
               >
                 Submit
               </button>
@@ -139,7 +139,7 @@ const Contact = () => {
               <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-6 mt-16 md:space-y-0">
                 {/* High Quality */}
                 <div className="flex items-center space-x-4">
-                  <SlTrophy className="w-[60] h-[60] text-[#000000]" />
+                  <SlTrophy className="w-[60px] h-[60px] text-[#000000]" />
                   <div>
                     <h3 className="text-lg font-semibold text-[#000000]">
                       High Quality
@@ -152,7 +152,7 @@ const Contact = () => {
 
                 {/* Warranty Protection */}
                 <div className="flex items-center space-x-4">
-                  <LuBadgeCheck className="w-[60] h-[60] text-[#000000]" />
+                  <LuBadgeCheck className="w-[60px] h-[60px] text-[#000000]" />
                   <div>
                     <h3 className="text-lg font-semibold text-[#000000]">
                       Warranty Protection
@@ -163,7 +163,7 @@ const Contact = () => {
 
                 {/* 24/7 Support */}
                 <div className="flex items-center space-x-4">
-                  <BiSupport className="w-[60] h-[60] text-[#000000]" />
+                  <BiSupport className="w-[60px] h-[60px] text-[#000000]" />
                   <div>
                     <h3 className="text-lg font-semibold text-[#000000]">
                       24 / 7 Support
