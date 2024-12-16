@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
 
             {/* Right Section */}
-            <form className="p-0 space-y-10">
+            <form className="grid grid-cols-1 p-0 space-y-10">
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -135,7 +135,7 @@ const Contact = () => {
                 Submit
               </button>
             </form>
-            <div className="bg-gray-100 w-[1100] h-[200] hidden sm:block md:w-[768] lg:w-[1100] -ml-12">
+            <div className="bg-gray-100 w-[1100] h-[200] -ml-12">
               <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-6 mt-16 md:space-y-0">
                 {/* High Quality */}
                 <div className="flex items-center space-x-4">
