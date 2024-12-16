@@ -135,7 +135,7 @@ const Contact = () => {
                 Submit
               </button>
             </form>
-            <div className="bg-gray-100 w-[1100] h-[200] -ml-12">
+            <div className="bg-gray-100 w-[1100px] h-[200px] -ml-12">
               <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-6 mt-16 md:space-y-0">
                 {/* High Quality */}
                 <div className="flex items-center space-x-4">
